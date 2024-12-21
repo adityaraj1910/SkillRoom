@@ -1,0 +1,114 @@
+/* details.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.details-container {
+    text-align: center;
+    background-color: #121212;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 195, 0.8);
+    max-width: 400px;
+    width: 100%;
+}
+
+.details-title {
+    font-size: 2.5rem;
+    color: #00ffc3;
+    text-shadow: 0 0 15px #00ffc3;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #00ffc3;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00ffc3;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #fff;
+    box-shadow: 0 0 10px #00ffc3;
+}
+
+select {
+    height: auto; /* Ensure dropdown is fully visible */
+    background-color: #121212;
+    color: #fff;
+    border: 2px solid #00ffc3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 195, 0.8);
+    font-size: 1rem;
+    padding: 10px;
+}
+
+select option {
+    background-color: #121212;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+select option:hover {
+    background-color: #00ffc3;
+    color: #000;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #00ffc3;
+    border-radius: 25px;
+    color: #00ffc3;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    /* Add these properties for the anchor tag */
+    text-decoration: none;
+    text-align: center;
+}
+
+/* If you have any hover effects on the button, make sure to keep those too */
+.button:hover {
+    background-color: #00ffc3;
+    color: #000;
+}
+
+.button:hover {
+    background-color: #00ffc3;
+    color: #000;
+    box-shadow: 0 0 10px #00ffc3, 0 0 20px #00ffc3;
+}
