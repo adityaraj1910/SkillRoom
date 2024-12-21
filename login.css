@@ -1,0 +1,167 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the main content */
+.main-container {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 195, 0.5);
+}
+
+/* Website title styling */
+.site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ffc3;
+    text-shadow: 0 0 15px #00ffc3, 0 0 30px #00ffc3;
+}
+
+/* Circular image container */
+.image-container {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(0, 255, 195, 0.5), rgba(0, 195, 255, 0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0, 255, 195, 0.8);
+}
+
+/* Inside image styling */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Login form */
+.login-form {
+    margin-top: 20px;
+}
+
+/* Align fields in a row */
+.field-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.field-row label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00ffc3;
+    width: 150px; /* Fixed width for label alignment */
+    text-align: left;
+}
+
+.field-row input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 2px solid #00ffc3;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.field-row input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.field-row input:focus {
+    border-color: #fff;
+    box-shadow: 0 0 10px #00ffc3;
+}
+
+/* Center the login button */
+.center-button {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 80%;
+    padding: 10px;
+    background-color: #00ffc3;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Navigation bar */
+.navbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #00ffc3;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+
+.field-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px; /* Further reduced space between rows */
+}
+
+.field-row label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #00ffc3;
+    width: 120px; /* Slightly smaller width for tighter alignment */
+    text-align: left;
+    margin-bottom: 0; /* Ensure no extra bottom margin */
+}
+
+.field-row input {
+    flex: 1;
+    padding: 8px 15px; /* Compact input box */
+    border: 2px solid #00ffc3;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+  
