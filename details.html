@@ -1,0 +1,55 @@
+<!-- details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Page</title>
+    <link rel="stylesheet" href="details.css">
+<link rel="stylesheet" href="theme-button.css">
+</head>
+<body>
+    <div class="details-container">
+        <h1 class="details-title">Enter Your Details</h1>
+        <form id="details-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="usn">USN:</label>
+                <input type="text" id="usn" name="usn" placeholder="Enter your USN" required>
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Select Your Skill:</label>
+                <select id="skills" name="skills" required>
+                    <option value="frontend">Frontend Development</option>
+                    <option value="backend">Backend Development</option>
+                    <option value="aiml">Artificial Intelligence and Machine Learning</option>
+                    <option value="datasci">Data Science</option>
+                    <option value="devops">DevOps</option>
+                    <option value="cybersec">Cybersecurity</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <input type="text" id="branch" name="branch" placeholder="Enter your branch" required>
+            </div>
+
+            <div class="form-group">
+                <label for="goal">Your Goal:</label>
+                <input type="text" id="goal" name="goal" placeholder="Enter your goal" required>
+            </div>
+
+            ><a href="login.html" class="button">Submit</a>
+
+           <!-- <a href="login.html"> <button type="submit" class="button" >Submit</button></a> -->
+        </form>
+    </div>
+<button id="theme-toggle" class="theme-toggle-btn"></button>
+<script src="theme-toggle.js" defer></script>
+</body>
+</html>

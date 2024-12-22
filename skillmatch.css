@@ -1,0 +1,213 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+header select,
+header button {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #00ffc3;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+header button:hover {
+    background-color: #00ffc3;
+    color: #000;
+}
+
+/* Dropdown Styling */
+.dropdown-container {
+    position: relative;
+}
+
+#skills-dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+#skills-button {
+    cursor: pointer;
+    border: 1px solid #00ffc3;
+    background-color: transparent;
+    padding: 5px 10px;
+    color: #00ffc3;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#skills-options {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #222;
+    border: 1px solid #00ffc3;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 10;
+}
+
+#skills-options label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.skill-name {
+    color: #00ffc3;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#skills-options input {
+    margin-right: 5px;
+}
+
+#dropdown-tick {
+    margin-top: 10px;
+    background-color: #00ffc3;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#dropdown-tick:hover {
+    background-color: #00FFFF;
+}
+
+/* Display Area */
+#display-area {
+    width: 60%;
+    margin: 20px auto;
+    padding: 15px;
+    background: #333; /* Neutral dark gray background */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+/* Student Card */
+.student-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #ffcccc, #ccffcc); /* Light red to light green gradient */
+    border-radius: 10px;
+    border: 1px solid #00ffc3;
+    color: #000;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.student-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+/* Buttons inside the student card */
+.button-container {
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 30px); /* Added gap from the border */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.button-container .cross-btn {
+    background-color: #ff4d4d; /* Vibrant red button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.button-container .tick-btn {
+    background-color: #4caf50; /* Strong green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+.button-container .tick-btn:hover,
+.button-container .cross-btn:hover {
+    opacity: 0.8;
+}
+
+/* Done Button */
+#done-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #00FFFF;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#done-btn:hover {
+    background-color: #00ffc3;
+}
+:root {
+    --bg-color: white;
+    --text-color: black;
+}
+
+[data-theme="dark"] {
+    --bg-color: black;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+

@@ -1,0 +1,19 @@
+    <link rel="stylesheet" href="theme-button.css">
+in head tag
+<button id="theme-toggle" class="theme-toggle-btn"></button>
+<script src="theme-toggle.js" defer></script>
+--before closing body tag
+:root {
+    --bg-color: #fff;
+    --text-color: #000;
+}
+
+[data-theme="dark"] {
+    --bg-color: #000;
+    --text-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}

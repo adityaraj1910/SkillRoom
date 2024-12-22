@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Seat Reservation</title>
+    <link rel="stylesheet" href="library.css">
+    <link rel="stylesheet" href="theme-button.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Library Seat Reservation</h1>
+        <label for="librarySelect" class="bold-label">Select Library:</label>
+        <select id="librarySelect">
+            <option value="" disabled selected>Select Library</option>
+            <option value="apex">Apex Library</option>
+            <option value="esb">ESB Library</option>
+            <option value="lhc">LHC Library</option>
+        </select>
+        <div id="libraryDetails" class="library-details">
+            <h2 id="libraryName">Library Details</h2>
+            <p id="capacity"></p>
+            <p id="seatsReserved"></p>
+            <div id="seatsLayout" class="seats-layout">
+                <!-- Seat icons will be dynamically added here -->
+            </div>
+            <button id="reserveButton" onclick="reserveSeat()" disabled>Reserve Selected Seat</button>
+            <button id="unreserveButton" onclick="unreserveSeat()" disabled>Unreserve Selected Seat</button>
+        </div>
+    </div>
+
+    <!-- Custom Alert Component -->
+    <div id="customAlert" class="alert-overlay">
+        <div class="alert-box">
+            <h2 class="alert-title" id="alertTitle">Notice</h2>
+            <p class="alert-message"></p>
+            <button class="alert-button" onclick="closeAlert()">OK</button>
+        </div>
+    </div>
+
+    <script src="library.js"></script>
+    <button id="theme-toggle" class="theme-toggle-btn"></button>
+<script src="theme-toggle.js" defer></script>
+</body>
+</html>

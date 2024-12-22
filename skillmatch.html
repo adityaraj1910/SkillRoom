@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Match</title>
+    <link rel="stylesheet" href="skillmatch.css">
+    <link rel="stylesheet" href="theme-button.css">
+
+</head>
+<body>
+    <header>
+        <div class="dropdown-container">
+            <label for="skills">Select Skills:</label>
+            <div id="skills-dropdown">
+                <button id="skills-button">Select Skills</button>
+                <div id="skills-options" class="dropdown-options">
+                    <label><input type="checkbox" value="Skill 1"><span class="skill-name">Skill 1</span></label>
+                    <label><input type="checkbox" value="Skill 2"><span class="skill-name">Skill 2</span></label>
+                    <label><input type="checkbox" value="Skill 3"><span class="skill-name">Skill 3</span></label>
+                    <label><input type="checkbox" value="Skill 4"><span class="skill-name">Skill 4</span></label>
+                    <button id="dropdown-tick" class="dropdown-tick-btn">✔</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <label for="goal">Select Goal:</label>
+            <select id="goal">
+                <option value="Goal 1">Goal 1</option>
+                <option value="Goal 2">Goal 2</option>
+                <option value="Goal 3">Goal 3</option>
+                <option value="Goal 4">Goal 4</option>
+            </select>
+        </div>
+
+        <button id="submit">Submit</button>
+    </header>
+
+    <div id="display-area">
+        <!-- Student cards will be dynamically rendered here -->
+    </div>
+
+    <button id="done-btn">Done</button>
+
+    <script src="skillmatch.js"></script>
+    <button id="theme-toggle" class="theme-toggle-btn"></button>
+<script src="theme-toggle.js" defer></script>
+
+</body>
+</html>

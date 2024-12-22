@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+h1 {
+    color: #00ffc3;
+    text-shadow: 0 0 10px #00ffc3;
+}
+
+select, button {
+    background-color: transparent;
+    border: 2px solid #00FFFF;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select {
+    color: #00FFFF;
+    background-color: #333;
+    border: 2px solid #00FFFF;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+select option {
+    background-color: #222;
+    color: #00FFFF;
+    padding: 10px;
+}
+
+select option:hover {
+    background-color: #00FFFF;
+    color: #000;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #00FFFF;
+    color: #000;
+}
+
+.library-details {
+    margin-top: 20px;
+    display: none;
+    color: #aaa;
+}
+
+#seatsLayout {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #00FF00;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.seat.reserved {
+    background-color: #FF0000;
+    cursor: not-allowed;
+}
+
+.seat.vacant:hover {
+    background-color: #00ff88;
+}
+
+.seat.selected {
+    background-color: #ffff00;
+}
+
+.seat span {
+    color: #333;
+}
+
+/* Custom Alert Styles */
+.alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.alert-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.alert-box {
+    background-color: #111;
+    border: 2px solid #00ffc3;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 195, 0.3);
+    transform: translateY(-20px);
+    transition: transform 0.3s ease-in-out;
+    animation: glow 2s infinite;
+}
+
+.alert-overlay.show .alert-box {
+    transform: translateY(0);
+}
+
+.alert-title {
+    color: #00ffc3;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(0, 255, 195, 0.5);
+}
+
+.alert-message {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.alert-button {
+    background-color: transparent;
+    border: 2px solid #00FFFF;
+    color: #00FFFF;
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+.alert-button:hover {
+    background-color: #00FFFF;
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 20px rgba(0, 255, 195, 0.3); }
+    50% { box-shadow: 0 0 30px rgba(0, 255, 195, 0.5); }
+    100% { box-shadow: 0 0 20px rgba(0, 255, 195, 0.3); }
+}
+.bold-label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #00ffc3;
+}
+
+.seat.my-reservation {
+    background-color: #0000FF; /* Blue for current user's reserved seats */
+    border: 2px solid #00ffc3;
+    cursor: pointer; /* Allow selection for unreservation */
+}
+
+
+#unreserveButton {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid #FF4444;
+    color: #FF4444;
+}
+
+#unreserveButton:hover:not(:disabled) {
+    background-color: #FF4444;
+    color: #000;
+}
+:root {
+    --bg-color: #fff;
+    --text-color: #000;
+}
+
+[data-theme="dark"] {
+    --bg-color: #000;
+    --text-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}

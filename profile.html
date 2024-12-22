@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillRoom - Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="theme-button.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1 class="site-title">Student Profile</h1>
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="avatar-container">
+                    <img src="student-avatar.jpg" alt="Student Avatar">
+                </div>
+                <h2 id="student-name">John Doe</h2>
+                <p id="student-branch">Computer Science Engineering</p>
+            </div>
+            <div class="profile-details">
+                <p><strong>USN:</strong> <span id="student-usn">CS12345678</span></p>
+                <p><strong>Skills:</strong> <span id="student-skills">Python, Java, Web Development</span></p>
+                <p><strong>Branch:</strong> <span id="student-branch-detail">CSE</span></p>
+                <p><strong>Goal:</strong> <span id="student-goal">Become a Full Stack Developer</span></p>
+            </div>
+        </div>
+
+        <!-- Additional icons for features -->
+        <div class="feature-icons">
+            <div class="icon-container">
+                <a href="skillmatch.html" class="icon-link">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Skill Matching</span>
+                </a>
+            </div>
+            <div class="icon-container">
+                <a href="library.html" class="icon-link">
+                    <i class="fas fa-chair"></i>
+                    <span>Seat Allocator</span>
+                </a>
+            </div>
+        </div>
+    </div>
+<button id="theme-toggle" class="theme-toggle-btn"></button>
+<script src="theme-toggle.js" defer></script>
+</body>
+</html>

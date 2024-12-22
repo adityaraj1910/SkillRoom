@@ -1,0 +1,37 @@
+.theme-toggle-btn {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    cursor: pointer;
+}
+
+.theme-toggle-btn.light-mode {
+    background-image: url('moon-icon.png'); /* Path to sun icon */
+}
+
+.theme-toggle-btn.dark-mode {
+    background-image: url('sun-icon.png'); /* Path to moon icon */
+}
+
+.theme-toggle-btn:hover::after {
+    content: attr(data-hover-text);
+    position: absolute;
+    top: 50px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
