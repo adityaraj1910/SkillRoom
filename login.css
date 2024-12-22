@@ -161,6 +161,21 @@ body {
     outline: none;
     transition: all 0.3s ease-in-out;
 }
+:root {
+    --bg-color: #fff;
+    --text-color: #000;
+}
+
+[data-theme="dark"] {
+    --bg-color: #000;
+    --text-color: #fff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
 
 
 
